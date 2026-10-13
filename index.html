@@ -183,6 +183,7 @@ footer a{color:inherit}
 .bar .in{max-width:496px;margin:0 auto;display:grid;grid-template-columns:52px 52px 1fr;gap:8px}
 .ib{display:grid;place-items:center;border:1px solid var(--line);color:var(--ink);text-decoration:none}
 .ib svg{width:19px;height:19px}
+.bar-brand{display:none}
 
 /* reveal (only when JS runs; content is visible without it) */
 .reveal{transition:opacity .9s ease,transform .9s ease}
@@ -315,9 +316,16 @@ footer a{color:inherit}
 
   footer .logos img{height:32px}
 
-  /* compact floating CTA instead of the full-width bar */
-  .bar{left:auto;right:24px;bottom:24px;width:380px;padding:10px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(28,32,38,.12)}
-  .bar[data-hide]{transform:translateY(calc(100% + 40px))}
+  /* desktop: slim sticky header that slides in after the hero */
+  .bar{top:0;bottom:auto;padding:12px var(--gut);border-top:0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+  .bar[data-hide]{transform:translateY(-110%)}
+  .bar .in{max-width:none;display:flex;align-items:center;gap:10px}
+  .bar .bar-brand{display:flex;align-items:center;gap:12px;margin-right:auto;color:var(--ink);text-decoration:none}
+  .bar .bar-brand img{width:34px;height:auto;filter:brightness(.3)}
+  .bar .bar-brand b{font-weight:400;font-size:13px;letter-spacing:.34em}
+  .bar .bar-brand small{display:block;font-size:9px;letter-spacing:.6em;color:var(--muted);margin-top:3px}
+  .bar .ib{width:44px;height:44px}
+  .bar .btn{width:auto;padding:15px 30px;font-size:12px}
 }
 
 /* ================= LARGE DESKTOP (1440px+) ================= */
@@ -456,7 +464,7 @@ footer a{color:inherit}
     <img class="fcre" src="assets/img/fortune-christies.png" width="300" height="265" alt="Fortune Christie's International Real Estate" loading="lazy">
     <div class="duo">
       <a class="btn" href="#get-pricing" data-cta="agent">Get pricing</a>
-      <a class="btn ghost" href="https://wa.me/13053397616?text=Hi%20Patrizia%2C%20I%27d%20like%20the%20House%20of%20Wellness%20price%20list." data-cta="whatsapp">WhatsApp</a>
+      <a class="btn ghost" href="https://wa.me/17863559024?text=Hi%20Patrizia%2C%20I%27d%20like%20the%20House%20of%20Wellness%20price%20list." data-cta="whatsapp">WhatsApp</a>
     </div>
   </section>
 
@@ -474,8 +482,9 @@ footer a{color:inherit}
 </div>
 
 <div class="bar" id="bar"><div class="in">
+  <a class="bar-brand" href="#top" aria-label="House of Wellness Brickell"><img src="assets/img/icon.svg" width="180" height="114" alt=""><span><b>HOUSE OF WELLNESS</b><small>BRICKELL</small></span></a>
   <a class="ib" href="tel:+13053397616" aria-label="Call Patrizia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
-  <a class="ib" href="https://wa.me/13053397616?text=Hi%20Patrizia%2C%20I%27d%20like%20the%20House%20of%20Wellness%20price%20list." aria-label="WhatsApp Patrizia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 21l1.6-4.6A9 9 0 1 1 8 19.8z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg></a>
+  <a class="ib" href="https://wa.me/17863559024?text=Hi%20Patrizia%2C%20I%27d%20like%20the%20House%20of%20Wellness%20price%20list." aria-label="WhatsApp Patrizia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 21l1.6-4.6A9 9 0 1 1 8 19.8z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg></a>
   <a class="btn" href="#get-pricing" data-cta="sticky">Get pricing</a>
 </div></div>
 
@@ -504,7 +513,7 @@ footer a{color:inherit}
     document.documentElement.lang=cur; document.title=TITLE[cur];
     nodes.forEach(function(n){ var v=t(n.en); if(n.el.innerHTML!==v) n.el.innerHTML=v; });
     attrs.forEach(function(n){ n.el.setAttribute('aria-label', cur==='es'&&ES_ATTR[n.en]?ES_ATTR[n.en]:n.en); });
-    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(a){ a.href='https://wa.me/13053397616?text='+encodeURIComponent(WA[cur]); });
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(a){ a.href='https://wa.me/17863559024?text='+encodeURIComponent(WA[cur]); });
     document.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed',String(b.getAttribute('data-lang')===cur)); });
     var sp=document.querySelector('#sound span'); if(sp) sp.textContent=t(document.getElementById('film-video').muted?'Tap for sound':'Sound on');
   }
@@ -569,7 +578,7 @@ footer a{color:inherit}
   var bar=document.getElementById('bar'), form=document.getElementById('get-pricing');
   if(!('IntersectionObserver' in window)) return;
   var formOn=false, heroOn=true, desk=window.matchMedia('(min-width:1024px)');
-  function barState(){ if(formOn||(desk.matches&&heroOn)) bar.setAttribute('data-hide',''); else bar.removeAttribute('data-hide'); }
+  function barState(){ var hide=desk.matches?heroOn:formOn; if(hide) bar.setAttribute('data-hide',''); else bar.removeAttribute('data-hide'); }
   new IntersectionObserver(function(es){ formOn=es[0].isIntersecting; barState(); },{threshold:.25}).observe(form);
   new IntersectionObserver(function(es){ heroOn=es[0].isIntersecting; barState(); },{threshold:.35}).observe(document.getElementById('top'));
   if(desk.addEventListener) desk.addEventListener('change',barState);
