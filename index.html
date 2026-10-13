@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F5F2EF">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<title>HoW Brickell Landing</title>
+<meta name="description" content="House of Wellness Brickell: studio to 2-bedroom wellness residences in Brickell, Miami, starting from $400K. Get the price list and floor plans from Patrizia Abelli, Fortune Christie's International Real Estate.">
+<script>
+  /* Site config. gtmId: the GTM container for this domain (e.g. "GTM-XXXXXXX"); GTM loads only when it is set. */
+  window.HOW_CONFIG={ formId:'vawbRx35', gtmId:'' };
+  (function(id){ if(!id) return; window.dataLayer=window.dataLayer||[]; dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});
+    var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtm.js?id='+id; document.head.appendChild(s); })(window.HOW_CONFIG.gtmId);
+</script>
+<link rel="stylesheet" href="https://embed.typeform.com/next/css/widget.css">
+<script src="https://embed.typeform.com/next/embed.js" id="tf-sdk" async></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="preload" as="image" href="assets/img/hero-tower.webp" fetchpriority="high">
+<style>
+/* Layout: one mobile column (max 520px, centred on desktop) on warm white. Full-bleed renders with centred type over them (like the developer site), swipe rails, Typeform slot right under the hero, sticky bottom CTA.
+   Brand: Playfair Display (developer's display face); Jost stands in for their licensed GT Flexa / Vera Humana. Colours from houseofwellnessbrickell.com. */
+:root{
+  --white:#FFFFFF; --linen:#F5F2EF; --sand:#EFEAE5; --stone:#CDC8C6; --mist:#DBE2EA;
+  --bronze:#B4A191; --bronze-deep:#7E6B5B; --ink:#2F2F2F; --muted:#6E6964; --line:#E4DED8;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--linen);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:15.5px;line-height:1.55;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%;height:auto}
+.page{max-width:520px;margin:0 auto;background:var(--white);padding-bottom:84px;overflow:hidden}
+.wrap{padding-inline:22px}
+section{padding-block:40px}
+.label{font-family:var(--sans);font-weight:400;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--bronze-deep);margin:0 0 10px}
+h2{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.14;margin:0 0 10px;text-wrap:balance}
+h2 em{font-style:italic;color:var(--bronze-deep)}
+.lead{color:var(--muted);margin:0 0 22px;font-size:15px}
+.center{text-align:center}
+
+.btn{display:block;width:100%;text-align:center;font:500 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:18px 20px;border:1px solid var(--ink);border-radius:0;background:var(--ink);color:var(--white);text-decoration:none;cursor:pointer;transition:background .3s ease,color .3s ease}
+.btn:hover{background:var(--white);color:var(--ink)}
+.btn.light{background:transparent;border-color:rgba(255,255,255,.85);color:#fff}
+.btn.light:hover{background:#fff;color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+a:focus-visible,.rail:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+
+/* hero */
+.hero{position:relative;color:#fff;background:#3b4656}
+.hero>img{width:100%;aspect-ratio:9/16;max-height:780px;object-fit:cover;object-position:8% 50%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,32,38,.5) 0%,rgba(28,32,38,0) 24%,rgba(28,32,38,0) 46%,rgba(28,32,38,.78) 100%)}
+.mark{position:absolute;top:34px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:12px;color:#fff;text-align:center}
+.mark svg{width:58px;height:auto}
+.mark b{font-family:var(--sans);font-weight:400;font-size:15px;letter-spacing:.42em;padding-left:.42em}
+.mark small{display:block;font-size:10px;letter-spacing:.9em;padding-left:.9em;margin-top:6px;opacity:.9}
+.hero .copy{position:absolute;left:22px;right:22px;bottom:30px;text-align:center}
+.hero .tag{font-family:var(--serif);font-style:italic;font-size:17px;margin:0 0 10px;opacity:.95}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:42px;line-height:1.05;margin:0 0 12px;text-wrap:balance}
+.hero h1 span{display:block;font-size:22px;font-style:italic;color:#E9DECF;margin-bottom:4px}
+.hero .sub{font-size:13px;margin:0 0 20px;color:#EDEBE8}
+.hero .credit{font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin:16px 0 0;color:#E4E1DC}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--white);border-bottom:1px solid var(--line)}
+.facts div{padding:18px 6px;text-align:center}
+.facts div+div{border-left:1px solid var(--line)}
+.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.2}
+.facts span{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* typeform */
+.form{background:var(--linen)}
+.how-form{position:relative;height:640px;background:var(--white);border:1px solid var(--line);overflow:hidden;transition:box-shadow .6s ease;text-align:left}
+.how-form>*{height:100%}
+.how-form .tf-v1-widget,.how-form iframe{width:100%;height:100%}
+.how-form .wait{display:grid;place-items:center;height:100%;color:var(--muted);font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+.how-form.flash{box-shadow:0 0 0 3px var(--bronze)}
+@media (max-width:559px){.how-form{height:min(100vh,720px);height:min(100svh,720px);margin-inline:-22px;border-inline:0}}
+.lang{position:absolute;top:14px;right:14px;z-index:3;display:flex;border:1px solid rgba(255,255,255,.7);background:rgba(28,32,38,.25)}
+.lang button{font:500 11px/1 var(--sans);letter-spacing:.18em;padding:8px 10px 8px 11px;color:#fff;background:transparent;border:0;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--ink)}
+.trust{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;font-size:13px;color:var(--muted)}
+.trust img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 12%}
+
+/* film */
+.film{background:var(--white)}
+.film .media{position:relative;background:#1f2329}
+.film video,.film .media img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.film .sound{position:absolute;right:12px;bottom:12px;display:flex;align-items:center;gap:8px;padding:9px 14px 9px 11px;border:1px solid rgba(255,255,255,.7);background:rgba(28,32,38,.45);color:#fff;font:400 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:background .3s ease}
+.film .sound:hover{background:rgba(28,32,38,.7)}
+.film .sound svg{width:18px;height:18px}
+.film .sound .w{display:none}
+.film .sound[aria-pressed="true"] .x{display:none}
+.film .sound[aria-pressed="true"] .w{display:inline}
+
+/* rails */
+.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 22px 4px;scroll-padding-left:22px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.tile{position:relative;flex:0 0 78%;scroll-snap-align:start;margin:0;overflow:hidden;background:var(--sand)}
+.tile img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.2s ease}
+.tile:hover img{transform:scale(1.04)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 16px 14px;background:linear-gradient(180deg,rgba(28,32,38,0),rgba(28,32,38,.7));color:#fff;font-family:var(--serif);font-size:18px}
+.tile.wide{flex-basis:84%}
+.tile.wide img{aspect-ratio:4/3}
+.hint{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:12px 22px 0}
+
+/* deposit plan */
+.plan{background:var(--linen)}
+.chart{position:relative;margin-top:8px}
+.bars{display:flex;align-items:flex-end;gap:4px;height:150px;border-bottom:1px solid var(--stone)}
+.bar-c{position:relative;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.bar-c i{display:block;width:100%;height:var(--h);background:var(--bronze);transform-origin:bottom;transform:scaleY(1);transition:transform 1.1s cubic-bezier(.22,.61,.36,1) var(--d,0s)}
+.bar-c em{z-index:1}
+.bar-g{position:relative;display:flex;gap:3px;align-items:flex-end;height:var(--h)}
+.bar-g .bar-c{flex:1}
+.bar-g>em{position:absolute;left:-6px;right:-6px;bottom:calc(100% + 6px);text-align:center;font-style:normal;font-size:12px;font-weight:500;white-space:nowrap;transition:opacity .6s ease calc(var(--d,0s) + .7s)}
+.chart.pre .bar-g>em{opacity:0}
+.bar-c.now i{background:var(--ink)}
+.bar-c.close i{background:var(--stone)}
+.bar-c em{position:absolute;left:0;right:0;bottom:calc(var(--h) + 6px);text-align:center;font-style:normal;font-size:12px;font-weight:500;color:var(--ink);opacity:1;transition:opacity .6s ease calc(var(--d,0s) + .7s)}
+.bar-c.close em{bottom:auto;top:12px;font-family:var(--serif);font-size:30px;font-weight:400}
+.bar-c.close em small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.chart.pre i{transform:scaleY(0)}
+.chart.pre em{opacity:0}
+.phases{display:grid;grid-template-columns:40fr 60fr;gap:4px;margin-top:10px;font-size:10px;letter-spacing:.1em;white-space:nowrap;text-transform:uppercase;color:var(--muted)}
+.phases span:last-child{text-align:right}
+.track{position:relative;height:2px;background:var(--stone);margin-top:26px}
+.track b{position:absolute;inset:0 auto 0 0;width:40%;background:var(--bronze-deep);transform-origin:left;transform:scaleX(1);transition:transform 1.4s cubic-bezier(.22,.61,.36,1) .3s}
+.chart.pre .track b{transform:scaleX(0)}
+.track span{position:absolute;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--white);border:1.5px solid var(--bronze-deep)}
+.steps{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:0}
+.steps li{display:grid;grid-template-columns:1fr auto;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted);opacity:1;transform:none;transition:opacity .6s ease var(--d,0s),transform .6s ease var(--d,0s)}
+.steps li b{color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+.chart.pre ~ .steps li{opacity:0;transform:translateY(8px)}
+
+/* CTA band */
+.band{position:relative;color:#fff;text-align:center}
+.band img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.band .copy{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 30px;background:rgba(28,32,38,.5)}
+.band h2{color:#fff;font-size:34px}
+.band p{margin:0 0 24px;font-size:14px;color:#EDEBE8}
+.band .btn{max-width:300px}
+
+/* wellness plan */
+.well img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:72% 50%}
+
+/* location */
+.loc img{width:100%;aspect-ratio:16/11;object-fit:cover;margin-top:18px}
+.chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.chips div{background:var(--white);padding:16px 6px;text-align:center}
+.chips b{display:block;font-family:var(--serif);font-weight:400;font-size:20px}
+.chips span{font-size:10.5px;letter-spacing:.08em;color:var(--muted);line-height:1.35;display:block}
+
+/* agent */
+.agent{background:var(--linen);text-align:center}
+.agent .photo{width:150px;height:190px;object-fit:cover;object-position:50% 15%;border-radius:75px 75px 0 0;margin:0 auto 18px}
+.agent h3{font-family:var(--serif);font-weight:400;font-size:28px;margin:0 0 4px}
+.agent p{margin:0;font-size:14px;color:var(--muted)}
+.langs{display:flex;justify-content:center;gap:8px;margin:12px 0 0}
+.langs span{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;border:1px solid var(--stone);color:var(--muted)}
+.fcre{width:110px;margin:22px auto 0}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+
+/* footer */
+footer{background:var(--sand);color:var(--muted);padding:34px 24px 28px;font-size:11px;line-height:1.65;text-align:center}
+footer .logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:22px 28px;margin-bottom:22px}
+footer figure{margin:0;display:flex;flex-direction:column;align-items:center}
+footer figcaption{font-size:9px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
+footer .logos img{height:26px;width:auto;filter:brightness(0);opacity:.78}
+footer .logos .eho{height:34px}
+footer p{margin:0 auto 12px;max-width:440px}
+footer strong{color:var(--ink);font-weight:500}
+footer a{color:inherit}
+
+/* sticky bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.96);border-top:1px solid var(--line);transition:transform .35s ease}
+.bar[data-hide]{transform:translateY(110%)}
+.bar .in{max-width:496px;margin:0 auto;display:grid;grid-template-columns:52px 52px 1fr;gap:8px}
+.ib{display:grid;place-items:center;border:1px solid var(--line);color:var(--ink);text-decoration:none}
+.ib svg{width:19px;height:19px}
+
+/* reveal (only when JS runs; content is visible without it) */
+.reveal{transition:opacity .9s ease,transform .9s ease}
+.reveal.pre{opacity:0;transform:translateY(18px)}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+@media (min-width:560px){.page{margin-block:28px;box-shadow:0 0 0 1px var(--line)}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <section class="hero" id="top" style="padding:0">
+    <img src="assets/img/hero-tower.webp" width="1300" height="813" alt="House of Wellness tower over Brickell at sunset, with Biscayne Bay behind" fetchpriority="high">
+    <div class="shade"></div>
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button><button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button></div>
+    <div class="mark" aria-label="House of Wellness Brickell">
+      <svg viewBox="0 0 179.555 114" aria-hidden="true"><path fill="currentColor" d="M178.682,104.646c-21.234,0-31.556-16.867-31.556-51.555,0-5.9.43-16.008.667-24.222.149-5.174.222-9.386.222-10.889C148.015,6.455,141.687.2,130.237.2,118.191.2,111.348,7.4,111.348,19.979c0,8.844,3.58,22.883,8.889,41.111l.222,1.333c3.894,13.467,7.778,26.181,7.778,35.778,0,8.986-3.513,14.222-9.556,14.222-6.409,0-16.714-5.254-25.333-16.667a64.8,64.8,0,0,0,13.333-39.111c0-15.982-6.162-24.444-17.778-24.444C77.92,32.2,72.46,40.092,72.46,55.535c0,14.645,4.778,29.318,13.333,40.444-8.608,11.353-18.639,16.444-24.889,16.444-6.388,0-10-5.105-10-14.222,0-9.6,3.662-22.311,7.556-35.778L58.9,61.09c5.514-18.948,8.889-30.573,8.889-40.444C67.793,7.189,61.489.2,49.348.2,37.809.2,31.126,6.423,31.126,17.535c0,1.295.083,5.233.222,10,.234,8,.667,18.806.667,25.111,0,34.949-10.322,52-31.556,52-.284,0-.667.16-.667.444v.889c0,.284.383.444.667.444,27.158,0,39.778-16.934,39.778-53.333,0-5.429-.442-15.126-.667-22.889-.16-5.545-.222-10.313-.222-12.222,0-10.061,3.6-16,9.556-16,7.9,0,10.667,9.964,10.667,18.444,0,11.239-3.9,24.23-8.889,40.222-3.45,11.62-8,28.056-8,37.111,0,10.835,5.82,16.444,17.333,16.444,10.482,0,21.026-5.021,29.556-14,8.475,8.979,19,14,29.555,14,11.516,0,17.333-5.61,17.333-16.444,0-9.055-4.772-25.491-8.222-37.111-.535-1.8-1.007-3.523-1.556-5.333-3.524-11.6-7.111-23.711-7.111-34.667,0-17.414,8.506-18.667,11.111-18.667,5.872,0,9.111,5.469,9.111,15.333,0,1.91-.283,6.6-.444,12.222-.225,7.871-.444,17.682-.444,23.111,0,36.664,12.62,53.778,39.778,53.778.284,0,.667-.16.667-.444v-.889c0-.284-.383-.444-.667-.444M89.571,90.423a66.094,66.094,0,0,1-8.889-33.778c0-8.884,1.516-14.351,2.889-17.333,1.814-3.935,3.963-5.333,5.333-5.333,2.977,0,9.556,5.827,9.556,23.333a65.031,65.031,0,0,1-8.889,33.111" transform="translate(0.207 -0.201)"/></svg>
+      <b>HOUSE OF WELLNESS<small>BRICKELL</small></b>
+    </div>
+    <div class="copy">
+      <p class="tag">Life at the center. Wellness at the core.</p>
+      <h1><span>Own in Brickell from</span>$400K</h1>
+      <p class="sub">Studio to 2-bedroom residences · starting price, subject to change</p>
+      <a class="btn light" href="#get-pricing" data-cta="hero">Get the price list</a>
+      <p class="credit">By North Development · Fortune Development Sales</p>
+    </div>
+  </section>
+
+  <div class="facts">
+    <div><b>10%</b><span>to reserve</span></div>
+    <div><b>656</b><span>residences</span></div>
+    <div><b>2029</b><span>est. delivery</span></div>
+  </div>
+
+  <!-- SECTION 2: Typeform vawbRx35 (EN main, ES translation). Mounted by the script at the bottom; follows the EN/ES toggle. -->
+  <section class="form wrap center" id="get-pricing">
+    <p class="label">Price list and floor plans</p>
+    <h2>Get current <em>pricing</em></h2>
+    <p class="lead">Three quick questions. Patrizia sends the price list and floor plans.</p>
+    <div class="how-form" id="how-form"><div class="wait">Loading form…</div></div>
+    <div class="trust">
+      <img src="assets/img/patrizia.webp" width="600" height="900" alt="" loading="lazy">
+      <span>Patrizia replies personally, in English or Spanish.</span>
+    </div>
+  </section>
+
+  <!-- Project film (North Development, 2:34). 720p file at assets/video/how-film.mp4. Starts muted when the section scrolls into view, pauses when it leaves. -->
+  <section class="film" id="film" style="padding-inline:0" data-src="assets/video/how-film.mp4">
+    <div class="wrap center"><p class="label">Watch · 2:34</p><h2>The House of Wellness <em>film</em></h2><p class="lead">From the developer, North Development.</p></div>
+    <div class="media">
+      <video id="film-video" muted playsinline loop preload="none" poster="assets/img/film-poster.webp" width="1280" height="720" aria-label="House of Wellness project film"></video>
+      <button class="sound" type="button" id="sound" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="x" d="M17 9l4 6M21 9l-4 6"/><path class="w" d="M17 8.5a5 5 0 0 1 0 7M19.5 6a8.5 8.5 0 0 1 0 12"/></svg><span>Tap for sound</span></button>
+    </div>
+  </section>
+
+  <section class="reveal" style="padding-inline:0">
+    <div class="wrap center"><p class="label">22,000+ sq ft of amenities</p><h2>Wellness, <em>built in</em></h2><p class="lead">Spa, fitness, pool and social spaces under one roof.</p></div>
+    <div class="rail" tabindex="0" aria-label="Amenities, swipe for more">
+      <figure class="tile"><img src="assets/img/amenity-spa.webp" width="720" height="423" alt="Spa with sauna and steam room" loading="lazy"><figcaption>Spa and hammam</figcaption></figure>
+      <figure class="tile"><img src="assets/img/amenity-fitness.webp" width="720" height="450" alt="Indoor-outdoor fitness studio" loading="lazy"><figcaption>Fitness studio</figcaption></figure>
+      <figure class="tile"><img src="assets/img/amenity-pool.webp" width="720" height="360" alt="Courtyard pool from above" loading="lazy"><figcaption>Courtyard pool</figcaption></figure>
+      <figure class="tile"><img src="assets/img/amenity-wellness-bar.webp" width="720" height="554" alt="Wellness bar" loading="lazy"><figcaption>Wellness bar</figcaption></figure>
+      <figure class="tile"><img src="assets/img/amenity-cowork.webp" width="720" height="450" alt="Coworking lounge" loading="lazy"><figcaption>Coworking</figcaption></figure>
+      <figure class="tile"><img src="assets/img/amenity-rooftop.webp" width="720" height="350" alt="Rooftop lounge over the city" loading="lazy"><figcaption>Rooftop lounge</figcaption></figure>
+    </div>
+    <div class="hint"><span>6 spaces</span><span>Swipe →</span></div>
+  </section>
+
+  <section class="plan wrap">
+    <div class="center"><p class="label">Deposit schedule</p><h2>40% while it rises, <em>60% at closing</em></h2></div>
+    <div class="chart" id="chart">
+      <div class="bars" aria-hidden="true">
+        <div class="bar-c now" style="flex:10;--h:20%;--d:0s"><em>10%</em><i></i></div>
+        <div class="bar-g" style="flex:15;--h:13%"><em style="--d:.45s">3 × 5%</em><div class="bar-c" style="--h:100%;--d:.15s"><i></i></div><div class="bar-c" style="--h:100%;--d:.3s"><i></i></div><div class="bar-c" style="--h:100%;--d:.45s"><i></i></div></div>
+        <div class="bar-c" style="flex:15;--h:30%;--d:.6s"><em>15%</em><i></i></div>
+        <div class="bar-c close" style="flex:60;--h:100%;--d:.85s"><em>60%<small>at closing</small></em><i></i></div>
+      </div>
+      <div class="phases"><span>Construction · 40%</span><span>Closing · 60%</span></div>
+      <div class="track"><b></b><span style="left:0"></span><span style="left:40%"></span><span style="left:100%"></span></div>
+    </div>
+    <ul class="steps">
+      <li style="--d:.2s"><span>At contract</span><b>10%</b></li>
+      <li style="--d:.35s"><span>At 2, 4 and 6 months</span><b>5% each</b></li>
+      <li style="--d:.5s"><span>At groundbreaking</span><b>15%</b></li>
+      <li style="--d:.65s"><span>At closing</span><b>60%</b></li>
+    </ul>
+  </section>
+
+  <section class="reveal" style="padding-inline:0">
+    <div class="wrap center"><p class="label">Studio, 1 and 2 bedrooms</p><h2>Calm, <em>light-filled</em> residences</h2><p class="lead">9′4″ ceilings, terrazzo counters, porcelain baths. Bay views in select units.</p></div>
+    <div class="rail" tabindex="0" aria-label="Residence interiors, swipe for more">
+      <figure class="tile wide"><img src="assets/img/res-living.webp" width="720" height="554" alt="Living room opening to a terrace" loading="lazy"><figcaption>Living and terrace</figcaption></figure>
+      <figure class="tile wide"><img src="assets/img/res-bedroom.webp" width="720" height="480" alt="Bedroom with floor-to-ceiling glass" loading="lazy"><figcaption>Bedroom</figcaption></figure>
+      <figure class="tile wide"><img src="assets/img/res-kitchen.webp" width="720" height="554" alt="Kitchen with integrated appliances" loading="lazy"><figcaption>Kitchen</figcaption></figure>
+      <figure class="tile wide"><img src="assets/img/res-balcony.webp" width="720" height="554" alt="Balcony over the city" loading="lazy"><figcaption>Balcony</figcaption></figure>
+    </div>
+    <div class="hint"><span>Interiors</span><span>Swipe →</span></div>
+  </section>
+
+  <section class="band" style="padding:0">
+    <img src="assets/img/exterior-pool-sunset.webp" width="1000" height="487" alt="" loading="lazy" style="object-position:12% 50%">
+    <div class="copy">
+      <p class="label" style="color:#E9DECF">Starting from $400K</p>
+      <h2>See what's still <em style="color:#E9DECF">available</em></h2>
+      <p>Get the current price list and floor plans today.</p>
+      <a class="btn light" href="#get-pricing" data-cta="band">Get the price list</a>
+    </div>
+  </section>
+
+  <section class="well wrap center reveal">
+    <p class="label">Included on move-in</p>
+    <h2>Your own <em>wellness plan</em></h2>
+    <p class="lead">A 360° health assessment, then a plan with personal training, nutrition and recovery.</p>
+    <img src="assets/img/life-yoga.webp" width="636" height="840" alt="Resident stretching in a sunlit room" loading="lazy">
+  </section>
+
+  <section class="loc reveal" style="padding-inline:0;padding-bottom:0">
+    <div class="wrap center"><p class="label">152 SW 9th Street</p><h2>The center of <em>Brickell</em></h2></div>
+    <img src="assets/img/loc-underline.webp" width="720" height="528" alt="The Underline park beneath the Metrorail in Brickell" loading="lazy">
+    <div class="chips">
+      <div><b>1 block</b><span>Metrorail and The Underline</span></div>
+      <div><b>2 blocks</b><span>Brickell City Centre</span></div>
+      <div><b>15 min</b><span>Miami International Airport</span></div>
+    </div>
+  </section>
+
+  <section class="agent wrap">
+    <img class="photo" src="assets/img/patrizia.webp" width="600" height="900" alt="Patrizia Abelli" loading="lazy">
+    <p class="label">Your agent</p>
+    <h3>Patrizia Abelli</h3>
+    <p>Realtor® · Fortune Christie's International Real Estate</p>
+    <div class="langs"><span>English</span><span>Español</span></div>
+    <img class="fcre" src="assets/img/fortune-christies.png" width="300" height="265" alt="Fortune Christie's International Real Estate" loading="lazy">
+    <div class="duo">
+      <a class="btn" href="#get-pricing" data-cta="agent">Get pricing</a>
+      <a class="btn ghost" href="https://wa.me/13053397616?text=Hi%20Patrizia%2C%20I%27d%20like%20the%20House%20of%20Wellness%20price%20list." data-cta="whatsapp">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logos">
+      <figure><figcaption>Developed by</figcaption><img src="assets/img/flogo1.svg" width="262" height="35" alt="North Development"></figure>
+      <figure><figcaption>Exclusive sales</figcaption><img src="assets/img/flogo2.svg" width="141" height="59" alt="Fortune Development Sales"></figure>
+      <figure><img class="eho" src="assets/img/f3.svg" width="60" height="67" alt="Equal Housing Opportunity"></figure>
+    </div>
+    <p><strong>Patrizia Abelli, Realtor®, Fortune Christie's International Real Estate.</strong> Patrizia is a cooperating agent. She is not the developer and not the developer's exclusive sales team. House of Wellness Brickell is developed by North Development; exclusive sales and marketing by Fortune Development Sales.</p>
+    <p>Prices, deposit schedule, features, delivery date and availability are subject to change without notice. Renderings are artist's conceptions. This is not an offer to sell or a solicitation where prohibited by law.</p>
+    <p>ORAL REPRESENTATIONS CANNOT BE RELIED UPON AS CORRECTLY STATING THE REPRESENTATIONS OF THE DEVELOPER. FOR CORRECT REPRESENTATIONS, MAKE REFERENCE TO THE DOCUMENTS REQUIRED BY SECTION 718.503, FLORIDA STATUTES, TO BE FURNISHED BY A DEVELOPER TO A BUYER OR LESSEE.</p>
+    <p>Equal Housing Opportunity · <a href="https://www.abelliyoukhadar.com/privacy">Privacy</a> · <a href="https://www.abelliyoukhadar.com/terms">Terms</a></p>
+  </footer>
+</div>
+
+<div class="bar" id="bar"><div class="in">
+  <a class="ib" href="tel:+13053397616" aria-label="Call Patrizia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+  <a class="ib" href="https://wa.me/13053397616?text=Hi%20Patrizia%2C%20I%27d%20like%20the%20House%20of%20Wellness%20price%20list." aria-label="WhatsApp Patrizia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 21l1.6-4.6A9 9 0 1 1 8 19.8z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg></a>
+  <a class="btn" href="#get-pricing" data-cta="sticky">Get pricing</a>
+</div></div>
+
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- language (EN / ES) ---------- */
+  var ES={"HOUSE OF WELLNESS<small>BRICKELL</small>": "HOUSE OF WELLNESS<small>BRICKELL</small>", "Life at the center. Wellness at the core.": "La vida en el centro. El bienestar en esencia.", "<span>Own in Brickell from</span>$400K": "<span>Sea propietario en Brickell desde</span>$400K", "Studio to 2-bedroom residences · starting price, subject to change": "Residencias de estudio a 2 habitaciones · precio inicial, sujeto a cambios", "Get the price list": "Ver precios y planos", "By North Development · Fortune Development Sales": "Por North Development · Fortune Development Sales", "to reserve": "para reservar", "residences": "residencias", "est. delivery": "entrega estimada", "Price list and floor plans": "Precios y planos", "Get current <em>pricing</em>": "Reciba los <em>precios actuales</em>", "Three quick questions. Patrizia sends the price list and floor plans.": "Tres preguntas rápidas. Patrizia le envía la lista de precios y los planos.", "Patrizia replies personally, in English or Spanish.": "Patrizia le responde personalmente, en español o en inglés.", "Watch · 2:34": "Video · 2:34", "The House of Wellness <em>film</em>": "El video de <em>House of Wellness</em>", "From the developer, North Development.": "Del desarrollador, North Development.", "Tap for sound": "Activar sonido", "Sound on": "Sonido activado", "Loading form…": "Cargando formulario…", "22,000+ sq ft of amenities": "Más de 22,000 pies² de amenidades", "Wellness, <em>built in</em>": "Bienestar <em>integrado</em>", "Spa, fitness, pool and social spaces under one roof.": "Spa, gimnasio, piscina y espacios sociales en un mismo edificio.", "Spa and hammam": "Spa y hammam", "Fitness studio": "Estudio de fitness", "Courtyard pool": "Piscina del patio", "Wellness bar": "Bar de bienestar", "Coworking": "Coworking", "Rooftop lounge": "Terraza en la azotea", "6 spaces": "6 espacios", "Swipe →": "Deslice →", "Deposit schedule": "Plan de depósitos", "40% while it rises, <em>60% at closing</em>": "40% durante la obra, <em>60% al cierre</em>", "3 × 5%": "3 × 5%", "at closing": "al cierre", "Construction · 40%": "Construcción · 40%", "Closing · 60%": "Cierre · 60%", "At contract": "Al firmar el contrato", "10%": "10%", "At 2, 4 and 6 months": "A los 2, 4 y 6 meses", "5% each": "5% cada uno", "At groundbreaking": "Al inicio de obra", "15%": "15%", "At closing": "Al cierre", "60%": "60%", "Studio, 1 and 2 bedrooms": "Estudios, 1 y 2 habitaciones", "Calm, <em>light-filled</em> residences": "Residencias serenas y <em>luminosas</em>", "9′4″ ceilings, terrazzo counters, porcelain baths. Bay views in select units.": "Techos de 9′4″, encimeras de terrazo, baños de porcelanato. Vistas a la bahía en unidades selectas.", "Living and terrace": "Sala y terraza", "Bedroom": "Habitación", "Kitchen": "Cocina", "Balcony": "Balcón", "Interiors": "Interiores", "Starting from $400K": "Desde $400K", "See what's still <em style=\"color:#E9DECF\">available</em>": "Vea lo que aún está <em style=\"color:#E9DECF\">disponible</em>", "Get the current price list and floor plans today.": "Reciba hoy la lista de precios y los planos actuales.", "Included on move-in": "Incluido al mudarse", "Your own <em>wellness plan</em>": "Su propio <em>plan de bienestar</em>", "A 360° health assessment, then a plan with personal training, nutrition and recovery.": "Una evaluación de salud 360° y luego un plan con entrenamiento personal, nutrición y recuperación.", "152 SW 9th Street": "152 SW 9th Street", "The center of <em>Brickell</em>": "El corazón de <em>Brickell</em>", "1 block": "1 cuadra", "Metrorail and The Underline": "Metrorail y The Underline", "2 blocks": "2 cuadras", "Brickell City Centre": "Brickell City Centre", "15 min": "15 min", "Miami International Airport": "Aeropuerto Internacional de Miami", "Your agent": "Su agente", "Patrizia Abelli": "Patrizia Abelli", "Realtor® · Fortune Christie's International Real Estate": "Realtor® · Fortune Christie's International Real Estate", "English": "English", "Español": "Español", "Get pricing": "Ver precios", "WhatsApp": "WhatsApp", "Developed by": "Desarrollado por", "Exclusive sales": "Ventas exclusivas", "<strong>Patrizia Abelli, Realtor®, Fortune Christie's International Real Estate.</strong> Patrizia is a cooperating agent. She is not the developer and not the developer's exclusive sales team. House of Wellness Brickell is developed by North Development; exclusive sales and marketing by Fortune Development Sales.": "<strong>Patrizia Abelli, Realtor®, Fortune Christie's International Real Estate.</strong> Patrizia es una agente cooperadora. No es el desarrollador ni forma parte del equipo de ventas exclusivo del desarrollador. House of Wellness Brickell es desarrollado por North Development; ventas y mercadeo exclusivos por Fortune Development Sales.", "Prices, deposit schedule, features, delivery date and availability are subject to change without notice. Renderings are artist's conceptions. This is not an offer to sell or a solicitation where prohibited by law.": "Los precios, el plan de depósitos, las características, la fecha de entrega y la disponibilidad están sujetos a cambios sin previo aviso. Las imágenes son representaciones artísticas. Esto no constituye una oferta de venta ni una solicitud donde la ley lo prohíba.", "ORAL REPRESENTATIONS CANNOT BE RELIED UPON AS CORRECTLY STATING THE REPRESENTATIONS OF THE DEVELOPER. FOR CORRECT REPRESENTATIONS, MAKE REFERENCE TO THE DOCUMENTS REQUIRED BY SECTION 718.503, FLORIDA STATUTES, TO BE FURNISHED BY A DEVELOPER TO A BUYER OR LESSEE.": "LAS DECLARACIONES VERBALES NO PUEDEN CONSIDERARSE COMO DECLARACIONES CORRECTAS DEL DESARROLLADOR. PARA OBTENER DECLARACIONES CORRECTAS, CONSULTE LOS DOCUMENTOS QUE, SEGÚN LA SECCIÓN 718.503 DE LOS ESTATUTOS DE LA FLORIDA, EL DESARROLLADOR DEBE ENTREGAR AL COMPRADOR O ARRENDATARIO.", "Equal Housing Opportunity · <a href=\"https://www.abelliyoukhadar.com/privacy\">Privacy</a> · <a href=\"https://www.abelliyoukhadar.com/terms\">Terms</a>": "Igualdad de Oportunidades en la Vivienda · <a href=\"https://www.abelliyoukhadar.com/privacy\">Privacidad</a> · <a href=\"https://www.abelliyoukhadar.com/terms\">Términos</a>"};
+  var ES_ATTR={'Call Patrizia':'Llamar a Patrizia','WhatsApp Patrizia':'WhatsApp a Patrizia','Amenities, swipe for more':'Amenidades, deslice para ver más','Residence interiors, swipe for more':'Interiores, deslice para ver más','House of Wellness project film':'Video del proyecto House of Wellness','Language':'Idioma'};
+  var WA={en:"Hi Patrizia, I'd like the House of Wellness price list.",es:'Hola Patrizia, me gustaría recibir la lista de precios de House of Wellness.'};
+  var TITLE={en:document.title,es:'House of Wellness Brickell | Desde $400K'};
+  var SEL='.mark b, .tag, h1, .sub, .credit, .btn, .facts span, h2, h3, .label, .lead, .trust span, figcaption, .hint span, .bar-c em small, .bar-g>em, .phases span, .steps span, .steps b, .band .copy>p:not(.label), .chips b, .chips span, .agent>p:not(.label), .langs span, footer p, .how-form .wait';
+  var nodes=[].slice.call(document.querySelectorAll(SEL)).map(function(el){ return {el:el,en:el.innerHTML.replace(/\s+/g,' ').trim()}; });
+  var attrs=[].slice.call(document.querySelectorAll('[aria-label]')).map(function(el){ return {el:el,en:el.getAttribute('aria-label')}; });
+  function t(en){ return cur==='es' && ES[en]!==undefined ? ES[en] : en; }
+  function pick(){
+    var q=new URLSearchParams(location.search).get('lang');
+    if(q==='es'||q==='en') return q;
+    return (navigator.language||'').toLowerCase().indexOf('es')===0 ? 'es' : 'en';
+  }
+  function writeUrl(){
+    try{ var u=new URL(location.href); u.searchParams.set('lang',cur); u.searchParams.set('typeform-lang',cur); history.replaceState(history.state,'',u.toString()); }catch(e){}
+  }
+  function paint(){
+    document.documentElement.lang=cur; document.title=TITLE[cur];
+    nodes.forEach(function(n){ var v=t(n.en); if(n.el.innerHTML!==v) n.el.innerHTML=v; });
+    attrs.forEach(function(n){ n.el.setAttribute('aria-label', cur==='es'&&ES_ATTR[n.en]?ES_ATTR[n.en]:n.en); });
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(a){ a.href='https://wa.me/13053397616?text='+encodeURIComponent(WA[cur]); });
+    document.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed',String(b.getAttribute('data-lang')===cur)); });
+    var sp=document.querySelector('#sound span'); if(sp) sp.textContent=t(document.getElementById('film-video').muted?'Tap for sound':'Sound on');
+  }
+  var cur=pick(); writeUrl(); paint();
+
+  /* ---------- Typeform (JS SDK; re-mounted on language change) ---------- */
+  var FORM_ID=window.HOW_CONFIG.formId, host=document.getElementById('how-form'), widget=null, sent={};
+  var PASS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','ad_id','adset_id','campaign_id','placement','typeform-lang'];
+  function mount(){
+    if(!(window.tf&&window.tf.createWidget)) return;
+    if(widget){ try{ widget.unmount(); }catch(e){} widget=null; }
+    host.innerHTML='';
+    var lang=cur;
+    widget=window.tf.createWidget(FORM_ID,{
+      container:host,
+      hidden:{lang:lang},
+      transitiveSearchParams:PASS,
+      tracking:{'typeform-lang':lang},
+      inlineOnMobile:true,
+      opacity:100,
+      iframeProps:{title: lang==='es'?'Formulario de precios House of Wellness':'House of Wellness pricing form'},
+      onSubmit:function(ev){
+        var rid=ev&&ev.responseId; if(!rid||sent[rid]) return; sent[rid]=1;
+        window.dataLayer=window.dataLayer||[];
+        window.dataLayer.push({event:'typeform_submit',form_id:FORM_ID,form_lang:lang,response_id:rid});
+      }
+    });
+  }
+  if(window.tf&&window.tf.createWidget) mount();
+  else { var sdk=document.getElementById('tf-sdk'); if(sdk) sdk.addEventListener('load',mount); }
+
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var l=b.getAttribute('data-lang'); if(l===cur) return;
+      cur=l; writeUrl(); paint(); mount();
+    });
+  });
+
+  /* every "get pricing" link: glide to the form and pulse its frame */
+  document.querySelectorAll('a[href="#get-pricing"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      host.classList.remove('flash');
+      setTimeout(function(){host.classList.add('flash');setTimeout(function(){host.classList.remove('flash');},1400);},reduce?0:650);
+    });
+  });
+
+  /* film: starts muted as soon as the section is on screen, pauses when it leaves; sound on tap */
+  var film=document.getElementById('film'), vid=document.getElementById('film-video'), snd=document.getElementById('sound'), loaded=false, tracked=false;
+  function load(){ if(!loaded){ vid.src=film.getAttribute('data-src'); loaded=true; } }
+  function start(){ load(); var p=vid.play(); if(p&&p.catch) p.catch(function(){}); if(!tracked){ tracked=true; try{(window.dataLayer=window.dataLayer||[]).push({event:'how_film_view'});}catch(e){} } }
+  snd.addEventListener('click',function(){
+    load(); vid.muted=!vid.muted; if(!vid.muted){ vid.controls=true; var q=vid.play(); if(q&&q.catch) q.catch(function(){}); }
+    snd.setAttribute('aria-pressed',String(!vid.muted)); snd.querySelector('span').textContent=t(vid.muted?'Tap for sound':'Sound on');
+    if(!vid.muted){ try{(window.dataLayer=window.dataLayer||[]).push({event:'how_film_sound_on'});}catch(e){} }
+  });
+  if('IntersectionObserver' in window && !reduce){
+    new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting) start(); else if(loaded) vid.pause(); });},{threshold:.5}).observe(vid);
+    new IntersectionObserver(function(es,o){ if(es[0].isIntersecting){ load(); vid.preload='auto'; o.disconnect(); } },{rootMargin:'600px 0px'}).observe(vid);
+  } else { vid.controls=true; vid.preload='metadata'; load(); }
+
+  /* sticky bar hides while the form is on screen */
+  var bar=document.getElementById('bar'), form=document.getElementById('get-pricing');
+  if(!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting) bar.setAttribute('data-hide',''); else bar.removeAttribute('data-hide'); });},{threshold:.25}).observe(form);
+  if(reduce) return;
+
+  /* deposit chart and section reveals: armed only for elements still below the fold */
+  var vh=window.innerHeight;
+  var targets=[document.getElementById('chart')].concat([].slice.call(document.querySelectorAll('.reveal')));
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target);} });},{threshold:.3});
+  targets.forEach(function(t){ if(t.getBoundingClientRect().top>vh){ t.classList.add('pre'); io.observe(t);} });
+})();
+</script>
+</body>
+</html>
