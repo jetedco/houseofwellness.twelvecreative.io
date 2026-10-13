@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>
+  /* Site config. GTM-KM4X95ZK is the client's container: it loads ONLY on the live landing host, never on previews, localhost or other twelvecreative.io pages. */
+  window.HOW_CONFIG = { formId:'vawbRx35', gtmId:'GTM-KM4X95ZK' };
+  (function(id){
+    if(!id || location.hostname !== 'houseofwellness.twelvecreative.io') return;
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({'gtm.start': Date.now(), event: 'gtm.js'});
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + id;
+    document.head.appendChild(s);
+  })(window.HOW_CONFIG.gtmId);
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#F5F2EF">
 <meta name="color-scheme" content="light">
 <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
 <title>House of Wellness Brickell | From $400K</title>
 <meta name="description" content="House of Wellness Brickell: studio to 2-bedroom wellness residences in Brickell, Miami, starting from $400K. Get the price list and floor plans from Patrizia Abelli, Fortune Christie's International Real Estate.">
-<script>
-  /* Site config. gtmId: the GTM container for this domain (e.g. "GTM-XXXXXXX"); GTM loads only when it is set. */
-  window.HOW_CONFIG={ formId:'vawbRx35', gtmId:'' };
-  (function(id){ if(!id) return; window.dataLayer=window.dataLayer||[]; dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});
-    var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtm.js?id='+id; document.head.appendChild(s); })(window.HOW_CONFIG.gtmId);
-</script>
 <link rel="stylesheet" href="https://embed.typeform.com/next/css/widget.css">
 <script src="https://embed.typeform.com/next/embed.js" id="tf-sdk" async></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -483,7 +489,7 @@ footer a{color:inherit}
 
 <div class="bar" id="bar"><div class="in">
   <a class="bar-brand" href="#top" aria-label="House of Wellness Brickell"><img src="assets/img/icon.svg" width="180" height="114" alt=""><span><b>HOUSE OF WELLNESS</b><small>BRICKELL</small></span></a>
-  <a class="ib" href="tel:+13053397616" aria-label="Call Patrizia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+  <a class="ib" href="tel:+17863559024" aria-label="Call Patrizia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
   <a class="ib" href="https://wa.me/17863559024?text=Hi%20Patrizia%2C%20I%27d%20like%20the%20House%20of%20Wellness%20price%20list." aria-label="WhatsApp Patrizia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 21l1.6-4.6A9 9 0 1 1 8 19.8z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg></a>
   <a class="btn" href="#get-pricing" data-cta="sticky">Get pricing</a>
 </div></div>
